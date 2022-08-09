@@ -1,0 +1,34 @@
+<!-- AddItemWithCookie.html
+* Group Project 2 Servlets
+*  By: Error_404_Name_Not_Found
+*  Date: 11/19/2018
+*
+* Using the code models from this chapter, create a web form that manages a portion of the data management in your project -
+* for example user resources, user login, or user scores.  The web form should have Session-based cookies, and store and retrieve 
+* information from a server-side database.  
+* User interface is important. The user should not have to re-enter database information, but that information can change.
+* Session information should last no longer than 6 hours.-->
+
+<html>
+    <head>
+        <title>Adding Item using session tracking with cookies</title>
+    </head>
+    <body>
+        <font>
+        Please enter the item's name and the informations regarding it</font>
+
+        <form method="get" action="AddItemWithCookie">
+            <p>Product Name <font color="#FF0000">*</font>
+                <input type="text" name="itemName">&nbsp;</p>
+
+            <p>Quantity <input type="text" name="quantity" size="20">&nbsp;
+                Weight <input type="text" name="weight" size="28">&nbsp;</p>
+            <p>Expiration Date <input type="text" name="expirationDate" size="50"></p>
+
+            <p><input type="submit" name="Submit" value="Submit">
+                <input type="reset" value="Reset"></p>
+
+        </form>
+        <p><font color="#FF0000">* required fields</font></p>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+* Group Project 2 Servlets
+*  By: Error_404_Name_Not_Found
+*   Date: 11/19/2018
+*
+* Using the code models from this chapter, create a web form that manages a portion of the data management in your project -
+* for example user resources, user login, or user scores.  The web form should have Session-based cookies, and store and retrieve 
+* information from a server-side database.  
+* User interface is important. The user should not have to re-enter database information, but that information can change.
+* Session information should last no longer than 6 hours.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Login</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            td{
+                padding: 10px;
+            }
+
+            div{
+                width: 50%;
+                border: 1px solid black;
+                border-radius: 5px;
+                background-color: lightskyblue;
+            }                    
+        </style>
+    </head>
+    <body>
+    <center><h1><u>Login Here</u></h1></center>
+    <center>
+        <div>
+            <form action="Login" method="POST">
+                <table>
+                    <tr>
+                        <td>User Name</td>
+                        <td><input type="text" class="form-control" name="username" placeholder="User name"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" class="form-control" name="password" placeholder="Password"></td>
+                    </tr>
+                    <tr style="text-align:center;">
+                        <td ><input class="btn btn-success" type="submit" name="choose" value="Student"</td>
+                        <td ><input class="btn btn-success" type="submit" name="choose" value="Admin"</td>
+
+                    </tr>
+                </table>
+        </div>
+    </center>        
+</body>
+</html>
+

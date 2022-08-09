@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>controller.Login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Admin</servlet-name>
+        <servlet-class>controller.Admin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Student</servlet-name>
+        <servlet-class>controller.Student</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddItemWithCookie</servlet-name>
+        <servlet-class>controller.AddItemWithCookie</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Admin</servlet-name>
+        <url-pattern>/Admin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Student</servlet-name>
+        <url-pattern>/Student</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>AddItemWithCookie</servlet-name>
+        <url-pattern>/AddItemWithCookie</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+           360
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>Login.html</welcome-file>
+    </welcome-file-list>
+</web-app>
